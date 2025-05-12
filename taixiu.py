@@ -45,6 +45,7 @@ while running:
     dices = []
     while number_of_dice not in range(1,7):
         number_of_dice = int(input("Nhap so xuc xac ban muon roll (tu 1 den 6 xuc xac): "))
+
     while len(dices) < number_of_dice:
         dice = random.randint(1, 6)
         dices.append(dice)
@@ -82,9 +83,9 @@ while running:
             print(f"Ban da thua")
     print()
 
-    while playagain != "co" or playagain != "khong":
+    while playagain != "co" and playagain != "khong":
         playagain = input("Choi tiep khong? (co/khong): ").lower()
-        break
+
     print()
     if playagain == "khong":
         break
